@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import "HomeViewController.h"
+
+#import "PeopleViewController.h"
+
+#import "SetupViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,9 +27,43 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.homeViewController = [[HomeViewController alloc] init];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
     
-    [self.window setRootViewController:self.homeViewController];
+    [homeViewController setTitle:@"项目管理"];
+    
+    homeViewController.tabBarItem.image = [UIImage imageNamed:@"register_lbs"];
+    
+    self.homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    
+    self.homeNavigationController.title = @"项目管理";
+    
+    PeopleViewController *peopleViewController = [[PeopleViewController alloc] init];
+    
+    [peopleViewController setTitle:@"人员管理"];
+    
+    peopleViewController.tabBarItem.image = [UIImage imageNamed:@"register_lbs"];
+    
+    self.peopleNavigationController = [[UINavigationController alloc] initWithRootViewController:peopleViewController];
+    
+    self.peopleNavigationController.title = @"人员管理";
+    
+    SetupViewController *setupViewController = [[SetupViewController alloc] init];
+    
+    [setupViewController setTitle:@"设置"];
+    
+    setupViewController.tabBarItem.image = [UIImage imageNamed:@"register_lbs"];
+    
+    self.setupNavigationController = [[UINavigationController alloc] initWithRootViewController:setupViewController];
+    
+    self.setupNavigationController.title = @"设置";
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    self.tabBarController.delegate = self;
+    
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:self.homeNavigationController,self.peopleNavigationController,self.setupNavigationController, nil];
+    
+    [self.window setRootViewController:self.tabBarController];
     
     return YES;
 }

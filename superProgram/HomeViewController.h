@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MBProgressHUD.h"
+
 #import "Reachability.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<MBProgressHUDDelegate>
 
 @property(strong,nonatomic)UILabel *_blockLabel;
 
 @property(strong,nonatomic)UILabel *_notificationlabel;
+
+@property(strong,nonatomic)UIButton *_pressButton;
+
+@property(strong,nonatomic)MBProgressHUD *_hud;
 
 @end

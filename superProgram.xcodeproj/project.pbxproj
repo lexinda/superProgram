@@ -11,6 +11,12 @@
 		28ADB12519E807FF000D4E27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB12419E807FF000D4E27 /* AppDelegate.m */; };
 		28ADB12D19E807FF000D4E27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ADB12C19E807FF000D4E27 /* Images.xcassets */; };
 		28ADB13C19E807FF000D4E27 /* superProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB13B19E807FF000D4E27 /* superProgramTests.m */; };
+		28ADB14719E80C09000D4E27 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB14619E80C09000D4E27 /* SystemConfiguration.framework */; };
+		28ADB14919E80C12000D4E27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB14819E80C12000D4E27 /* UIKit.framework */; };
+		28ADB14B19E80C1A000D4E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB14A19E80C1A000D4E27 /* Foundation.framework */; };
+		28ADB14D19E80C23000D4E27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB14C19E80C23000D4E27 /* CoreGraphics.framework */; };
+		28ADB15219E80D0B000D4E27 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB15119E80D0B000D4E27 /* Reachability.m */; };
+		28ADB15619E80E87000D4E27 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB15519E80E87000D4E27 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,14 @@
 		28ADB13519E807FF000D4E27 /* superProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = superProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ADB13A19E807FF000D4E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28ADB13B19E807FF000D4E27 /* superProgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = superProgramTests.m; sourceTree = "<group>"; };
+		28ADB14619E80C09000D4E27 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		28ADB14819E80C12000D4E27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28ADB14A19E80C1A000D4E27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28ADB14C19E80C23000D4E27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28ADB15019E80D0B000D4E27 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		28ADB15119E80D0B000D4E27 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		28ADB15419E80E87000D4E27 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		28ADB15519E80E87000D4E27 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ADB14D19E80C23000D4E27 /* CoreGraphics.framework in Frameworks */,
+				28ADB14B19E80C1A000D4E27 /* Foundation.framework in Frameworks */,
+				28ADB14919E80C12000D4E27 /* UIKit.framework in Frameworks */,
+				28ADB14719E80C09000D4E27 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,7 @@
 		28ADB11319E807FF000D4E27 = {
 			isa = PBXGroup;
 			children = (
+				28ADB14E19E80C37000D4E27 /* Frameworks */,
 				28ADB11E19E807FF000D4E27 /* superProgram */,
 				28ADB13819E807FF000D4E27 /* superProgramTests */,
 				28ADB11D19E807FF000D4E27 /* Products */,
@@ -74,6 +93,7 @@
 		28ADB11E19E807FF000D4E27 /* superProgram */ = {
 			isa = PBXGroup;
 			children = (
+				28ADB15319E80E6D000D4E27 /* controller */,
 				28ADB14519E80AAF000D4E27 /* tools */,
 				28ADB12319E807FF000D4E27 /* AppDelegate.h */,
 				28ADB12419E807FF000D4E27 /* AppDelegate.m */,
@@ -112,8 +132,46 @@
 		28ADB14519E80AAF000D4E27 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				28ADB15719E81627000D4E27 /* MBProgressHUD */,
+				28ADB14F19E80CDD000D4E27 /* Reachability */,
 			);
 			name = tools;
+			sourceTree = "<group>";
+		};
+		28ADB14E19E80C37000D4E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28ADB14C19E80C23000D4E27 /* CoreGraphics.framework */,
+				28ADB14A19E80C1A000D4E27 /* Foundation.framework */,
+				28ADB14819E80C12000D4E27 /* UIKit.framework */,
+				28ADB14619E80C09000D4E27 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28ADB14F19E80CDD000D4E27 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				28ADB15019E80D0B000D4E27 /* Reachability.h */,
+				28ADB15119E80D0B000D4E27 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		28ADB15319E80E6D000D4E27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				28ADB15419E80E87000D4E27 /* HomeViewController.h */,
+				28ADB15519E80E87000D4E27 /* HomeViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		28ADB15719E81627000D4E27 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28ADB12519E807FF000D4E27 /* AppDelegate.m in Sources */,
+				28ADB15219E80D0B000D4E27 /* Reachability.m in Sources */,
 				28ADB12219E807FF000D4E27 /* main.m in Sources */,
+				28ADB15619E80E87000D4E27 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
 		28ADB14D19E80C23000D4E27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADB14C19E80C23000D4E27 /* CoreGraphics.framework */; };
 		28ADB15219E80D0B000D4E27 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB15119E80D0B000D4E27 /* Reachability.m */; };
 		28ADB15619E80E87000D4E27 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB15519E80E87000D4E27 /* HomeViewController.m */; };
+		28ADB15A19E81C8D000D4E27 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ADB15919E81C8D000D4E27 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		28ADB15119E80D0B000D4E27 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		28ADB15419E80E87000D4E27 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		28ADB15519E80E87000D4E27 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		28ADB15819E81C8D000D4E27 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		28ADB15919E81C8D000D4E27 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 		28ADB15719E81627000D4E27 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				28ADB15819E81C8D000D4E27 /* MBProgressHUD.h */,
+				28ADB15919E81C8D000D4E27 /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			files = (
 				28ADB12519E807FF000D4E27 /* AppDelegate.m in Sources */,
 				28ADB15219E80D0B000D4E27 /* Reachability.m in Sources */,
+				28ADB15A19E81C8D000D4E27 /* MBProgressHUD.m in Sources */,
 				28ADB12219E807FF000D4E27 /* main.m in Sources */,
 				28ADB15619E80E87000D4E27 /* HomeViewController.m in Sources */,
 			);
